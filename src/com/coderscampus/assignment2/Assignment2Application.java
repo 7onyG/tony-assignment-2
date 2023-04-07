@@ -3,7 +3,9 @@ package com.coderscampus.assignment2;
 public class Assignment2Application {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// generate a random number
+		//collect user input
+		//etc
 
 	}
 
