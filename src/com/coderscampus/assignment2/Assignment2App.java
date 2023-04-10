@@ -7,9 +7,9 @@ public class Assignment2App {
 
 	public static void main(String[] args) {
 		  Random random = new Random();
-	        int randomNumber = random.nextInt(100) + 1; // generates a random number between 1 and 100 (inclusive)
+	        int randomNumber = random.nextInt(100) + 1; 
 	        
-	        int guessesLeft = 5; // the player has 5 guesses
+	        int guessesLeft = 5; 
 	        
 	        Scanner scanner = new Scanner(System.in);
 	        
@@ -19,7 +19,7 @@ public class Assignment2App {
 	            
 	            if (guess < 1 || guess > 100) {
 	                System.out.println("Your guess is not between 1 and 100, please try again");
-	                continue; // restart the loop without counting this guess
+	                continue; 
 	            }
 	            
 	            if (guess < randomNumber) {
@@ -28,13 +28,13 @@ public class Assignment2App {
 	                System.out.println("Please pick a lower number");
 	            } else {
 	                System.out.println("You win!");
-	                return; // exit the program
+	                return; 
 	            }
 	            
 	            guessesLeft--;
 	        }
 	        
 	        System.out.println("You lose, the number to guess was " + randomNumber);
-
+	        scanner.close();
 	}
 }
